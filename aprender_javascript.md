@@ -3,8 +3,8 @@ Para aprender Javascript
 
 Vean el resumen de javascript que hice primero, a lo mejor con eso les basta.
 
-Cualquier tutorial, la mayoría te enseña relacionado a HTML y CSS, pero no hace
-falta. Lo importante es entender:
+Pueden buscar cualquier tutorial, la mayoría te enseña relacionado a HTML y CSS,
+pero no hace falta. Lo importante es entender:
 
 - Como se escribe (comentarios, if, else, for)
 - Variables (numeros, Strings, arrays)
@@ -45,19 +45,20 @@ No se bien del todo como es, lo que sé que hay es:
 
 * PHP: Es un lenguaje de programación que se usa para hacer cosas en el
   servidor, por ejemplo sirve para recibir y guardar los puntajes en una base de
-  datos. Es para hacer programas que funcionan en el servidor, para hacer
+  datos. Es para hacer programas que funcionan en el servidor, puede hacer
   cualquier cosa.
 
 * Base de datos: Por ejemplo MySQL. Son solamente tablas en donde podés guardar
-  mirar cosas. Para usarla generalmente se usa PHP, pero creo que se puede usar
-  Javascript también.
+  o mirar cosas. Para usarla generalmente se usa PHP, pero creo que se puede
+  usar Javascript también.
 
 Del lado del cliente
 --------------------
 
 Al cliente le llegan tres cosas, HTML, CSS y Javascript. Puede venir todo junto
 en un solo archivo (podés meter CSS y Javascript adentro del HTML pero es más
-desprolijo).
+desprolijo), pero normalmente llegan los tres archivos por separado.
+
 También aparte llegan las imágenes, sonidos, etc.
 
 * HTML: Es un archivo en donde viene el contenido de la página web, cada HTML es
@@ -91,10 +92,11 @@ Javascript.
 Todo el juego se hace en Javascript, se guarda en archivos .js. Las imágenes se
 ponen en archivos aparte.
 
-Si uno hace doble click en un HTML se puede abrir, el CSS y el Javascript
-funciona, el problema es que por seguridad ante virus, cuando lo abrís de esa
-forma el Javascript no puede abrir archivos, entonces no se pueden cargar las
-imágenes del juego.
+Si uno hace doble click en un HTML se va a abrir en el navegador, el CSS y el
+Javascript van a funcionar. El problema es que por seguridad ante virus la
+mayoría de navegadores, al abrir desde un archivo local de tu PC el Javascript
+no tiene permitido abrir archivos, entonces no se pueden cargar las imágenes del
+juego.
 
 Entonces hay que instalar un servidor web simple, que no tiene ni PHP ni bases
 de datos, lo único que hace es mandar los HTML, CSS y Javascript.

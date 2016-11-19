@@ -13,13 +13,13 @@ Se pueden hacer de dos formas
 
 x = 3; // Comentario de una linea al lado de código
 
-/** Comentario multilinea
+/* Comentario multilinea
 El comentario sigue hasta ser cerrado con */
 
 /*
  * Comentario multilinea pero mas lindo
  *
- * Es mas prolijo
+ * Es mas prolijo, los asteriscos extra están de adorno
  */
 
 /**
@@ -47,7 +47,7 @@ Los espacios y saltos de línea que se usan no influyen en nada pero sirven para
 ordenar todo. Hay convenciones a seguir pero la mayoría de espacios y saltos de
 línea no son necesarios para que el programa funcione.
 
-Siempre que se abren corchetes se empieza a usar Tab hasta cerrar.
+Siempre que se abren llaves se empieza a usar Tab hasta cerrar.
 
 Los Tabs pueden ser cualquier cosa pero la convención es usar 4 espacios en vez
 de Tab, sino hay que configurar el editor.
@@ -57,6 +57,9 @@ uno pueda ver simultaneamente dos códigos uno al lado de otro en una notebook, 
 3 al mismo tiempo en una PC.
 
 Usar o no puntos y comas es lo mismo. No se que conviene, si usar o no.
+
+Normalmente lasVariablesSeLlamanAsi (los objetos también), y las clases
+EmpiezanConMayuscula.
 
 ~~~~~~~~~~~~{.javascript}
 function hola(nombre) {
@@ -84,7 +87,7 @@ usarlas
 
 let edad = 3;
 edad += 1; // Sumarle 1
-edad++ // Es una abreviacion de lo mismo
+edad++; // Es una abreviacion de lo mismo
 edad = 50;
 
 // Variables de string
@@ -201,15 +204,16 @@ instancia de una clase, que se guarda en una variable y se usa para lo que uno
 quiere.
 
 Los objetos adentro pueden tener variables y funciones. Si las variables y
-funciones pertenecen a un objeto se nombran en realidad, atributos y métodos.
+funciones pertenecen a un objeto, se nombran en realidad atributos y métodos.
 
 Cuando se usan atributos o metodos propios hay que usar ```this```. Cuando se
 usa ```this``` no hace falta usar ```let```
 
 ~~~~~~~~~~~~{.javascript}
-class auto {
+class Auto {
+
     /**
-     * Esto es lo que se ejecuta cuando se crea un nuevo auto
+     * Esta función se ejecuta cuando se crea un nuevo auto
      */
     constructor(color, velocidad, marca) {
         this.ancho = 2;
@@ -248,4 +252,11 @@ class auto {
         }
     }
 }
+
+autoDelMartin = new Auto('rojo', 180, 'chevrolet'); // Crear un auto
+autoDelNano = new Auto('gris', 80, 'ford'); // Crear otro auto
+
+autoDelMartin.acelerar(); // Ejecutar funciones del auto
+
+autoDelMartin.color = 'azul'; // Usar variables del auto
 ~~~~~~~~~~~~~~~~~~~~~~~~~

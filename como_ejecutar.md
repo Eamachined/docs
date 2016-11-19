@@ -20,7 +20,8 @@ Para correr el servidor
 -----------------------
 
 Hay que iniciar un servidor web en la carpeta principal del repositorio (donde
-está este README)
+está el README por ejemplo), de esa forma uno va a hostear un sitio web con todo
+lo que tengas en la carpeta.
 
 ### En Windows
 
@@ -30,8 +31,7 @@ es hacer doble click al programa
 
 ### En Linux
 
-No hace falta ningún programa, hay que abrir una terminal en la carpeta y
-hacer:
+No hace falta instalar nada, hay que abrir una terminal en la carpeta y hacer:
 
 ~~~~~~~~~~~~~~~~~~~~
 python3 -m http.server 8080
@@ -45,12 +45,14 @@ que ir a ```127.0.0.1:8080``` o a ```localhost:8080```.
 
 Desde ahí te podés mover y seleccionar el ```.html``` que querés abrir.
 
+También se puede acceder desde otra PC en la red local.
+
 Para juegos con servidor
 ========================
 
 Creo que hay dos formas, haciendo un servidor completo en tu PC con PHP, MySQL,
-ets. O se puede correr el mismo servidor simple para el juego, y para las cosas
+etc. O se puede correr el mismo servidor simple para el juego, y para las cosas
 del lado del servidor usar el mío.
 
-Pero si uno está probando cosas con PHP y eso creo que si o si hay que correr
+Pero si uno está probando cosas con PHP y eso, creo que si o si hay que correr
 un servidor, sino hay que actualizar el mío a cada rato (que tambien puede ser)
